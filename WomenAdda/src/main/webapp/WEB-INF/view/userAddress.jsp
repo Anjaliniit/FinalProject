@@ -42,7 +42,7 @@
 
 
 
-			<sf:form class="form-signin" modelAttribute="address">
+			<sf:form class="form-signin" modelAttribute="uaddress">
 
 				<h2 class="form-signin-heading btn-info" style="width: 100%">Billing
 					Address</h2>

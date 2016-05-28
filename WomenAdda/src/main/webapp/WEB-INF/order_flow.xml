@@ -18,7 +18,7 @@
 	
 	
 	<action-state id="calladdress">
-	<evaluate expression="shoppingCartController.getAddress()" result="flowscope.uaddress"></evaluate>
+	<evaluate expression="shoppingCartController.getAddress()" result="flowScope.uaddress"></evaluate>
 	   <transition on="success" to="address"/>
 	</action-state>
 	
@@ -28,13 +28,13 @@
 	</view-state>
 	
 	<action-state id="insertAddress">
-	<evaluate expression="userController.insertAddress(flowscope.uaddress,messageContext)" result="flowscope.uaddress"></evaluate>
+	<evaluate expression="userController.insertAddress(flowScope.uaddress,messageContext)" result="flowScope.uaddress"></evaluate>
 	   <transition on="success" to="getAdd"/>
 	</action-state>
 	
 	
 	<action-state id="getAdd">
-	<evaluate expression="userController.getAdd()" result="flowscope.uaddress"></evaluate>
+	<evaluate expression="userController.getAdd()" result="flowScope.uaddress"></evaluate>
 	   <transition on="success" to="thankyou"/>
 	</action-state>
 	

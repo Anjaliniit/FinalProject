@@ -6,6 +6,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.binding.message.MessageContext;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -19,6 +20,7 @@ import com.womenadda.model.UserRegister;
 import com.womenadda.service.ProductService;
 import com.womenadda.service.UserService;
 
+@Component
 @Controller
 public class UserController {
 	

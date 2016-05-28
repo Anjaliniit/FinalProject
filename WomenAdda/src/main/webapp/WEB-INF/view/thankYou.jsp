@@ -2,12 +2,16 @@
 <%@page isELIgnored="false" %>
 <div id="main">
 <div id="header">  <%@include file="header.jsp" %></div>
+<br>
+<br>
+<br><br>
+
 <div id="body">
 <div class="container">
 <sf:form modelAttribute="address" method="post">
 <h1>Thankyou for Shoping </h1>
 
-Hello ${address.cname}
+Hello ${uaddress.cname}
 <h3>Your Order is generated and Order No-O110005</h3>
 
 						<table class="table table-striped">

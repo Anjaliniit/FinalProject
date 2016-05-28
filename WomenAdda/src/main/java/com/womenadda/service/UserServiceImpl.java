@@ -24,12 +24,15 @@ public class UserServiceImpl implements UserService {
 	userDAO.addUser(u);	
 	}
 
+	
+	@Transactional
 	public UserRegister getUserById(int userId) {
 		
 		return this.userDAO.getUserById(userId);
 	}
 
 	
+	@Transactional
 	public String insertAddress(Address address){
      userDAO.insertAddress(address);
      return "success";
