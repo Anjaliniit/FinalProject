@@ -64,7 +64,7 @@ public class ShoppingCartController {
 	}
 
 	
-	@RequestMapping(value = "/delete/{pid}")
+	@RequestMapping(value = "/deletep/{pid}")
 	public String delete(@PathVariable(value = "pid") int pid, HttpSession session,Model m) {
 		cart = (ShoppingCart) session.getAttribute("cart");
 

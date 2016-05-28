@@ -43,7 +43,7 @@ window.location="http://localhost:8080/WomenAdda/delete/"+id;
 					<td>${product.quantity}</td>
 					<td>${product.p.price*product.quantity}</td>
 					<td><a class="btn btn-danger"
-								href="<c:url value='${session.getContextPath()}/delete/${product.p.id}'/>">Delete <span class="glyphicon glyphicon-remove-sign"></span></a></td>
+								href="<c:url value='${session.getContextPath()}/deletep/${product.p.id}'/>">Delete <span class="glyphicon glyphicon-remove-sign"></span></a></td>
 					</tr>
 					</c:forEach>
 					<tr>

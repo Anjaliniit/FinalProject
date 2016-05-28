@@ -18,28 +18,28 @@
 	
 	
 	<action-state id="calladdress">
-	<evaluate expression="shoppingCartController.getAddress()" result="flowscope.address"></evaluate>
+	<evaluate expression="shoppingCartController.getAddress()" result="flowscope.uaddress"></evaluate>
 	   <transition on="success" to="address"/>
 	</action-state>
 	
-	<view-state id="address" view="userAddress" model="flowScope.address">
+	<view-state id="address" view="userAddress" model="flowScope.uaddress">
 	   <transition on="edit" to="start"/>
 	   <transition on="submit" to="insertAddress"/>
 	</view-state>
 	
 	<action-state id="insertAddress">
-	<evaluate expression="userController.insertAddress(flowscope.address,messageContext)" result="flowscope.address"></evaluate>
+	<evaluate expression="userController.insertAddress(flowscope.uaddress,messageContext)" result="flowscope.uaddress"></evaluate>
 	   <transition on="success" to="getAdd"/>
 	</action-state>
 	
 	
 	<action-state id="getAdd">
-	<evaluate expression="userController.getAdd" result="flowscope.address"></evaluate>
+	<evaluate expression="userController.getAdd()" result="flowscope.uaddress"></evaluate>
 	   <transition on="success" to="thankyou"/>
 	</action-state>
 	
 	
-	<view-state id="thankyou" view="thankYou" model="flowScope.address">
+	<view-state id="thankyou" view="thankYou" model="flowScope.uaddress">
 	   
 	   <transition on="submit" to="toHome"/>
 	</view-state>
